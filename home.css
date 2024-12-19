@@ -1,0 +1,289 @@
+/*specialfonts and effects*/
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@100;300;400;700;900&display=swap'); /* Add Noto Serif Display import */
+
+/* Apply global styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  /* Prevent overflow due to padding and borders */
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #020d1c;
+}
+html, body {
+    overflow-x: hidden;  /* Prevent horizontal scroll */
+}
+
+
+/* Set the background color for the entire page */
+body {
+    background-color: #020D1C; /* Page background color */
+    color: white; /* Set text color to white for better contrast */
+    margin: 0; /* Removes default margin */
+    font-family: Arial, sans-serif; /* Optional: Set a default font */
+}
+
+/* Header styles */
+.nav-bar {
+    background-color: #020D1C; /* Set the header background color */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-bar .lg {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar .logo img {
+    margin-right: 10px;
+}
+
+.nav-bar .name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white; /* Accent color for logo name */
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar ul li {
+    margin: 0 15px;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-bar ul li a:hover {
+    color: #00e0a5; /* Highlight color on hover */
+}
+/* Style for the Placement Prep heading */
+h1.placement-title {
+    font-size: 4rem; /* Larger font size for the title */
+    font-weight: bold;
+    color:#00E2F0; /* Optional accent color */
+    text-align: left;
+    margin-top: 50px;
+}
+
+h3.career-title{
+    font-size: 3rem;
+     /* Larger font size for the title */
+    
+    color:white; /* Optional accent color */
+    text-align: center;
+    margin-top: 50px;
+}
+h3.careersub-title{
+    font-size: 2.5rem;
+     
+    
+    color:#62a2a4; /* Optional accent color */
+    text-align: center;
+    margin-top: 0px;
+
+
+}
+p.paragraph{
+    color:white;
+    font-size:1.25rem;
+    padding-left:50px;
+    padding-right:50px;
+    margin-top:30px;
+}
+.start button {
+    padding: 10px 10px; /* Slightly larger buttons */
+    border: 2px solid #00e0a5; /* White border to contrast with background */
+    border-radius: 10px; /* Smooth, rounded edges */
+    font-size: .75rem; /* Ensure readability */
+    color: #00e0a5; /* Button text color */
+    background-color: transparent; /* Stand-out background */
+    cursor: pointer;
+    transition: transform 0.6s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for making the button pop out */
+.start button:hover {
+    transform: scale(1.1); /* Make the button grow */
+    box-shadow: 0px 4px 10px #00e0a5; /* Add a glowing effect */
+    background-color: #00e0a5; /* Button background color change */
+    color: #020D1C; /* Text color changes to dark */
+}
+
+/* Focus effect to maintain pop-out effect when clicked */
+.start button:focus {
+    transform: scale(1.1); /* Slight grow effect */
+    box-shadow: 0px 4px 10px rgba(0, 226, 240, 0.6); /* Glowing effect when focused */
+    outline: none; /* Remove default outline */
+    background-color:#00e0a5; /* Keep the background color changed */
+    color: #020D1C; /* Text color */
+}
+
+/* Hover Effect */
+.start button:hover {
+    color: #0C0424;
+    background-color: #00e0a5; /* Change background for emphasis */
+}
+p.paragraph2{
+    text-align:center;
+    padding-left:2
+}
+/*chatgpt section*/
+body {
+    font-family: Arial, sans-serif;
+    background-color:#020d1c ;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h4 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555555;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #003366;
+    color : #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0055a5;
+}
+
+
+
+
+
+
+
+/* Footer styles */
+.footer {
+    background-color: #020D1C; /* Footer background */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    margin: 10px;
+    min-width: 150px;
+}
+
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-right a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.footer-right a img {
+    width: 50px; /* Adjust this size as needed */
+    height: auto;
+    margin: 0 8px; /* Spacing between icons */
+}
+
+.footer-right a:hover {
+    transform: scale(1.7);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .nav-bar ul {
+        flex-direction: column;
+        display: none; /* Initially hidden */
+        background-color: #020D1C;
+        position: absolute;
+        top: 60px; /* Below the header */
+        right: 20px;
+        border: 1px solid #00e0a5;
+        padding: 10px;
+    }
+
+    .nav-bar ul li {
+        margin: 10px 0;
+    }
+
+    .nav-bar .menu-toggle {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}
+
+/* Show menu on toggle */
+.nav-bar.active ul {
+    display: flex;
+}

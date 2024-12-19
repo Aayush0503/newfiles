@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Placement Home</title>
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <body>
+        <header><!-- Navigation Bar -->
+            <nav class="nav-bar">
+                <div class="lg">
+                    <span class="logo">
+                        <img width="55" src="assets/a2u_logo.png" alt="logo">
+                    </span>
+                    <span class="name">Alumni-2-Undergrad</span>
+                </div>
+                <ul>
+                    <li><a href="Aptitude.html">Home</a></li>
+                    <li><a href="ResumeEvaluation.html">Events</a></li>
+                    <li><a href="MockInterview.html">JobConnect</a></li>
+                    <li><a href="PreviousExpriences.html">Community</a></li>
+                    <li><a>PlacementPrep</a></li>
+                    <li><a>MyProfile</a></li>
+                    <li><a>About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h1 class="placement-title">Placement Prep !</h1>
+        <h3 class="career-title">Boost Your Career</h3>
+        <h3 class="careersub-title">with the right guidance</h3>
+        <p class="paragraph">
+            Our Placement Training Portal is your one-stop solution for career advancement. This comprehensive platform offers a wide range of resources to empower your job search. From aptitude tests and mock interviews to resume-building workshops and career counseling, we've got you covered. Our unique feature, a log of previous interview experiences, provides valuable insights to prepare for top companies. With our guidance and exclusive internship and placement opportunities, you can gain the skills, knowledge, and connections needed to secure your dream job.
+        </p>
+        
+        <div class="container">
+            <!-- Section 1: Test Your Aptitude -->
+            <div class="section aptitude">
+                <h4>Test Your Aptitude</h4>
+                <p>Test your skills and ace your placement rounds with our comprehensive aptitude assessments.</p>
+                <button onclick="window.location.href='./aptitude.html'">Get Started</button>
+            </div>
+
+            <!-- Section 2: Craft Your Perfect Resume -->
+            <div class="section resume">
+                <h4>Craft Your Perfect Resume</h4>
+                <p>Your One-Stop Shop for Resume Success: Craft a Compelling Resume, Get Personalized Feedback, and Accelerate Your Job Search.</p>
+                <button onclick="window.location.href='./resume.html'">Get Started</button>
+            </div>
+
+            <!-- Section 3: Simulated Interviews -->
+            <div class="section interview">
+                <h4>Simulated Interviews</h4>
+                <p>Benefit from expert guidance and personalized feedback to refine your interview techniques and boost your confidence.</p>
+                <button onclick="window.location.href='./interviews.html'">Get Started</button>
+            </div>
+
+            <!-- Section 4: Interview Journal -->
+            <div class="section journal">
+                <h4>Interview Journal</h4>
+                <p>Learn from the detailed interview experiences of your alumni and industry experts, including their strategies, challenges faced, and lessons learned.</p>
+                <button onclick="window.location.href='./journal.html'">Get Started</button>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3>Alumni-2-Undergrad</h3>
+                    <p>&copy; 2024 A2U. All rights reserved.</p>
+                </div>
+                <div class="footer-center">
+                    <p><strong>Contact Us:</strong></p>
+                    <p>Email: abc@gmail.com</p>
+                    <p>Phone: +91 xxxxxxxxxxx</p>
+                </div>
+                <div class="footer-right">
+                    <p>Follow Us:</p>
+                    <a href="#"><img src="assets\IMG-20241214-WA0011.jpg" alt="Facebook" width="24"></a>
+                    <a href="#"><img src="assets\IMG-20241214-WA0013.jpg" alt="Twitter" width="24"></a>
+                    <a href="#"><img src="assets\IMG-20241214-WA0014.jpg" alt="Instagram" width="24"></a>
+                    <a href="#"><img src="assets\IMG-20241214-WA0010.jpg" alt="LinkedIn" width="24"></a>
+                </div>
+            </div>
+        </footer>
+        <script>
+            function toggleMenu() {
+                const navBar = document.querySelector('.nav-bar');
+                navBar.classList.toggle('active');
+            }
+        </script>
+    </body>
+</html>
