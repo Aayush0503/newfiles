@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test  Yourself</title>
+    <link
+        rel="stylesheet"
+        href="TestAptitude.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+<!-- Chart.js Library -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="TestAptitude.js"></script>
+<style>
+    .easy { color: green; font-weight: normal; }
+    .medium { color: orange; font-weight: normal; }
+    .hard { color: red; font-weight: normal; }
+</style>
+
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="lg">
+                <span class="logo">
+                    <img width="55" src="assets/a2u_logo.png" alt="logo">
+                </span>
+                <span class="name">Alumni-2-Undergrad</span>
+            </div>
+            <ul>
+                <li><a href="Aptitude.html">Home</a></li>
+                <li><a href="ResumeEvaluation.html">Events</a></li>
+                <li><a href="MockInterview.html">JobConnect</a></li>
+                <li><a href="PreviousExpriences.html">Community</a></li>
+                <li><a>PlacementPrep</a></li>
+                <li><a>MyProfile</a></li>
+                <li><a>About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 class="heading" style="text-align:center;">
+
+        <span style=" color:#0047ab ;   ">CHALLENGE</span>
+        <span style="  font-weight:400; color: #1ca9c9; ">YOURSELF!</span>
+        
+    </h1>
+    <h6 style="text-align: center;font-family: 'Martel Sans', sans-serif;">Everything needs practice.Even cheating!.</h6>
+    
+    <div class="box">
+        <div class="container">
+            <h3 style="padding-left:20px; padding-top:10px; color:white;">Coding Test</h3>
+            <p class="text-container " style="padding-left:20px; ">Demonstrate your coding proficiency and algorithmic thinking across various programming languages.</p>
+            <ul class="text-container">
+                <li>3 questions</li>        
+                <li>60 minutes</li>
+                
+            </ul>
+            <button class="button-container">start now</button>
+        </div>
+
+        <div class="container">
+            <h3 style="padding-left:20px; padding-top:10px; color:white;">Aptitude Test</h3>
+            <p class="text-container " style="padding-left:20px; ">Sharpen your logical reasoning and problem-solving skills with our comprehensive aptitude tests.</p>
+            <ul class="text-container">
+                
+                <li>30 questions</li>        
+                <li>30 minutes</li>
+                
+                
+            </ul>
+            <button class="button-container">start now</button>
+        </div>
+
+
+
+        <div class="container">
+            <h3 style="padding-left:20px; padding-top:10px; color:white;">Soft Skills</h3>
+            <p class="text-container " style="padding-left:20px; ">Assess your communication skills and command of the English language through our grammar and comprehension tests.</p>
+            <ul class="text-container">
+                
+                <li>30 questions</li>        
+                <li>30 minutes</li>
+                
+            </ul>
+            <button class="button-container">start now</button>
+        </div>
+
+
+        <div class="container">
+            <h3 style="padding-left:20px; padding-top:10px; color:white;">Complete Analysis</h3>
+            <p class="text-container " style="padding-left:20px; ">Test your preparation in a real exam environment with comprehensive analysis tests designed to help you understand your limits and overcome challenges.</p>
+            <ul class="text-container">
+                
+                <li>total duration:90 min</li>        
+                <li></li>
+                
+            </ul>
+            <button class="button-container">start now</button>
+        </div>
+    </div>
+
+    <h2 class="heading" style="text-align:center;">
+        <span style="color:#0047ab ;">your</span>
+        <span style="font-weight:400; color: #1ca9c9; ">stats!</span>
+    </h2>
+
+
+    <h3 style="text-align:center; font-family:'Martel Sans', sans-serif;padding-top:0%;">average score out of 100</h3>
+    <div class="stats-wrapper" >
+        <div class="stats-container">
+            <h3>Coding Skills</h3>
+            <canvas id="codingChart"></canvas>
+        </div>
+        <div class="stats-container">
+            <h3>Aptitude Skills</h3>
+            
+            <canvas id="aptitudeChart"></canvas>
+        </div>
+        <div class="stats-container">
+            <h3>Soft Skills</h3>
+            <canvas id="softSkillsChart"></canvas>
+        </div>
+    </div>
+
+    <div class="filter-container">
+        <div class="filter" >Hard</div>
+        <div class="filter">Easy</div>
+        <div class="filter">Medium</div>
+        <div class="filter">Coding </div>
+        <div class="filter">Aptitude</div>
+        <div class="filter">Soft Skills </div>
+        <div class="filter">Complete Analysis</div>
+    </div>
+<!--test id logic 1st  digit(1-coding 2-aptitude,3-soft skills,4-complete analysis) , 2nd digit (1-hard ,2-med,3-easy), 3rd digit(no of tests
+)-->
+    <table>
+        <thead>
+            <tr>
+                <th>Sl No.</th>
+                <th>Test ID</th>
+                <th>Test Type</th>
+                <th>Difficulty</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>1</td>
+                <td>121</td>
+                <td>Coding </td>
+                <td class="easy">Easy</td>
+                <td><button class="filter">START</button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>211</td>
+                <th>Aptitude</th>
+                <td class="medium">Medium</td>
+                <td><button class="filter">START</button></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>301</td>
+                <td>Soft Skills</td>
+                
+                <td class="hard">Hard</td>
+                <td><button class="filter" >START </button></td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>122</td>
+                <td>Coding </td>
+                <td class="easy">Easy</td>
+                <td><button class="filter">START</button></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>212</td>
+                <th>Aptitude</th>
+                <td class="medium">Medium</td>
+                <td><button class="filter">START</button></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>302</td>
+                <td>Soft Skills</td>
+                
+                <td class="hard">Hard</td>
+                <td><button class="filter" >START </button></td>
+            </tr>
+
+            <tr>
+                <td>7</td>
+                <td>123</td>
+                <td>Coding </td>
+                <td class="easy">Easy</td>
+                <td><button class="filter">START</button></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>213</td>
+                <th>Aptitude</th>
+                <td class="medium">Medium</td>
+                <td><button class="filter">START</button></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>303</td>
+                <td>Soft Skills</td>
+                
+                <td class="hard">Hard</td>>
+                <td><button class="filter" >START </button></td>
+                
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>401</td>
+                <td>Complete Analysis</td>
+                
+                <td class="medium">Medium</td>
+                <td><button class="filter" >START </button></td>
+                </tr>
+        </tbody>
+    </table>
+    
+    
+    
+
+    
+</body>
+</html>

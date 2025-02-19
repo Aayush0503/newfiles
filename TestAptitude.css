@@ -1,0 +1,190 @@
+
+html, body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    background-color:white;
+    color:black;
+}
+.nav-bar {
+    background-color:white; /* Set the header background color */
+    color: #0047ab;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-bar .lg {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar .logo img {
+    margin-right: 10px;
+}
+.nav-bar .name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0047ab; /* Accent color for logo name */
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar ul li {
+    margin: 0 15px;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: #0047ab;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-bar ul li a:hover {
+    color: #00e0a5; /* Highlight color on hover */
+}
+
+.heading{
+    font-weight:100;
+    text-align:left;
+    margin-top:70px;
+    font-size:40px;
+    font-family: 'Martel Sans', sans-serif;
+    text-transform:uppercase;
+
+}
+
+.box{
+    display: flex;
+    gap:40px;
+}
+
+.container{
+    /*background:linear-gradient(to right, #0047ab,#1ca9c9);;*/
+    background:#1ca9c9;
+    
+    
+   
+    width:300px;
+    height:350px;
+    border-radius:20px;
+    margin-left:25px;
+    margin-right:25px;
+    
+
+}
+.text-container{
+    
+    font-size:15px;
+    color:white;
+    padding-top:5px;
+    
+    text-transform:uppercase;
+    font-family:'Poppins', sans-serif;
+
+}
+.button-container{
+    width:120px;
+    height:50px;
+    background:white;
+    color:#0047ab;
+    margin-left:165px;
+    margin-bottom:10px;
+
+    border:0px solid white;
+    font-size:15px;
+    font-family: 'Martel Sans', sans-serif;
+    border-radius:20px;
+    
+    
+    text-transform:uppercase;
+    transition: background-color 0.3s ease-in-out, transform 0.3s;
+}
+
+button:hover{
+    background-color:white ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+.stats-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+    height:350px;
+}
+
+.stats-container {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+
+canvas {
+    max-width: 100%;
+}
+
+.filter-container{
+    width:100%;
+    height:100px;
+    background-color:white;  
+    padding-left:10px; 
+    display:flex;
+    gap:40px; 
+}
+.filter {
+    width:100px;
+    height:30px;
+    text-align:center;
+    
+    background-color:white ; /* Default Blue */
+    color: #0047ab;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Default shadow */
+    
+}
+
+/* Hover Effect */
+.filter:hover {
+    background-color:#00e0a5 ; /* Change color on hover */
+}
+
+/* Active (Clicked) State */
+.filter.active {
+    background-color:#00e0a5 ; /* Red after clicking */
+    transform: scale(1.1); /* Pops out */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Bigger shadow */
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color:black ;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+tr {
+    border-bottom: 2px solid #0047ab; /* Border only between rows */
+}
+th {
+    background-color: white;
+}
